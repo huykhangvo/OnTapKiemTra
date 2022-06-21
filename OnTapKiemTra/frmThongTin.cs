@@ -164,5 +164,10 @@ namespace OnTapKiemTra
 
             }
         }
+
+        private void btnTimKiem_Click(object sender, EventArgs e)
+        {
+            hienthi("WHERE HoTen like '%"+txtKhungTimKiem.Text+"%'");
+        }
     }
 }

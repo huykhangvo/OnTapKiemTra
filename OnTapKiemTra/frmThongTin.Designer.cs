@@ -40,6 +40,7 @@
             this.btnLuu = new System.Windows.Forms.Button();
             this.btnThemMoi = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.btnTimKiem = new System.Windows.Forms.Button();
             this.txtDiaChi = new System.Windows.Forms.TextBox();
             this.txtSDT = new System.Windows.Forms.TextBox();
             this.txtHoTen = new System.Windows.Forms.TextBox();
@@ -53,6 +54,7 @@
             this.label6 = new System.Windows.Forms.Label();
             this.txtTuoi = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
+            this.txtKhungTimKiem = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.msds)).BeginInit();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -169,6 +171,8 @@
             // 
             // panel2
             // 
+            this.panel2.Controls.Add(this.txtKhungTimKiem);
+            this.panel2.Controls.Add(this.btnTimKiem);
             this.panel2.Controls.Add(this.btnXoa);
             this.panel2.Controls.Add(this.btnSua);
             this.panel2.Controls.Add(this.btnLuu);
@@ -178,6 +182,16 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(985, 55);
             this.panel2.TabIndex = 4;
+            // 
+            // btnTimKiem
+            // 
+            this.btnTimKiem.Location = new System.Drawing.Point(882, 0);
+            this.btnTimKiem.Name = "btnTimKiem";
+            this.btnTimKiem.Size = new System.Drawing.Size(100, 55);
+            this.btnTimKiem.TabIndex = 4;
+            this.btnTimKiem.Text = "Tìm Kiếm";
+            this.btnTimKiem.UseVisualStyleBackColor = true;
+            this.btnTimKiem.Click += new System.EventHandler(this.btnTimKiem_Click);
             // 
             // txtDiaChi
             // 
@@ -298,6 +312,16 @@
             this.label3.TabIndex = 2;
             this.label3.Text = "Tuổi";
             // 
+            // txtKhungTimKiem
+            // 
+            this.txtKhungTimKiem.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtKhungTimKiem.Location = new System.Drawing.Point(612, 0);
+            this.txtKhungTimKiem.Multiline = true;
+            this.txtKhungTimKiem.Name = "txtKhungTimKiem";
+            this.txtKhungTimKiem.Size = new System.Drawing.Size(271, 55);
+            this.txtKhungTimKiem.TabIndex = 5;
+            this.txtKhungTimKiem.Tag = "Nhập tên bạn muốn tìm";
+            // 
             // frmThongTin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -311,6 +335,7 @@
             this.Load += new System.EventHandler(this.frmThongTin_Load);
             ((System.ComponentModel.ISupportInitialize)(this.msds)).EndInit();
             this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
@@ -343,6 +368,8 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
         private System.Windows.Forms.DateTimePicker date;
+        private System.Windows.Forms.Button btnTimKiem;
+        private System.Windows.Forms.TextBox txtKhungTimKiem;
     }
 }
 
